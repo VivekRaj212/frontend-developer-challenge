@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+   background-color: hsl(0, 0%, 94%);
+
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    overflow: hidden;
+
+}
+
+.card {
+    height: 480px;
+    width: 600px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px 20px 120px 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
+}
+
+#form-input {
+
+    display: flex;
+    flex-direction: row;
+    text-align:left;
+    border-radius: 6px;
+    padding-bottom: 12px;
+}
+
+#form-input label {
+    font-family: 'Poppins';
+    font-style: normal;
+    color: hsl(0, 2%, 11%);
+}
+
+#form-input input {
+
+     font-size: 32px;
+     font-weight: 400;
+     width: 115px;
+     height: 50px;
+     border-radius: 4px;
+     border-style:inset;
+     padding-left: 8px;
+}
+
+#input1, #input2, #input3
+{
+
+    padding-right: 20px;
+}
+
+.align {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+button {
+
+    background-color: #8c1df3;
+    border-radius: 50%;
+    cursor: pointer;
+    border-style: none;
+}
+
+button:hover {
+
+    background-color: #9e43f3;
+}
+
+img {
+
+    width: 44px;
+    height: 44px;
+}
+
+hr {
+
+    width: 89%;
+}
+.display-age h1 {
+
+     font-size: 50px;
+     font-family: 'Poppins', sans-serif;
+     font-weight: bolder;
+}
+
+.display-age h1 span{
+
+        color: #8c1df3;
+}
+
+
+/* Responsive CSS */
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        height: auto;
+        border-radius: 20px;
+        padding: 20px;
+        border-radius: 20px 20px 80px 20px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
+    }
+
+    #form-input {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #form-input input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+        height: auto;
+        border-radius: 20px;
+        padding: 20px;
+        border-radius: 20px 20px 60px 20px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
+
+    }
+
+    #form-input input {
+        font-size: 20px;
+        height: 40px;
+    }
+
+    .display-age h1 {
+        font-size: 40px;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
